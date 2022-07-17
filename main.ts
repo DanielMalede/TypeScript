@@ -35,3 +35,6 @@ function cample(first:number,second:number):void {
     }
 }
 
+array.forEach(element => {
+    
+});
