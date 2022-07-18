@@ -175,4 +175,3 @@
 // }
 // console.log(chackText([5,2,8,29,1],"text"))
 
-
