@@ -102,7 +102,7 @@
 //     numArray.forEach(item => {
 //       if(item<minNum)
 //         minNum=item
-//     })
+//     }) 
 //     return minNum
 //   }
 //   console.log(returnMinNumbersArray([4,4,3,8,1,7,15]))
