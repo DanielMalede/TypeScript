@@ -107,3 +107,72 @@
 //   }
 //   console.log(returnMinNumbersArray([4,4,3,8,1,7,15]))
   
+// function printAinName(arrayNames: string[]): any {
+//     for (let item of arrayNames) {
+//         if (item[0]=="A"){
+//             return item
+//         }
+//     }
+//     return
+// }
+// console.log(printAinName(["daniel", "Abay", "Abraham"])) 
+
+// function chackIfDividedByTwo(arrayNum:number[]):string{
+//     for (let item of arrayNum){
+//         if(item%2==0){
+//             return "yes"
+//         }
+//     }
+//     return "no"
+// }
+// console.log(chackIfDividedByTwo([5,7,1,9]))
+
+// 
+
+// function printTextAsNum(myText:string,myNum:number):void{
+//     for(let i = 0;i<myNum;i++){
+//         console.log(myText)
+//     }
+// }
+// printTextAsNum("blabla",4)
+
+// function chackIfAgeIsAbove18(myName:string,myAge:number):string{
+//    let answer=  myAge>18? "Welcome"+myName : "No Entry"+myName
+//    return answer
+// }
+// console.log(chackIfAgeIsAbove18("Dalia",23) )
+
+// function chackIfName(firstName:string,lastName:string):any{
+//     let answer = firstName[0]==lastName[0]? firstName[0]:0
+//     return answer
+// }
+// console.log(chackIfName("Dalia","Zegaya"))
+
+// function chackArrayLength(myArray: any[]):string {
+//     switch (myArray.length) {
+//         case 0:
+//             return "No information"
+//         case 1:
+//             return "one information"
+//         case 2:
+//             return "two information"
+//         default:
+//             return "to much Information"
+//     }
+// }
+// console.log(chackArrayLength([1,5,,5,5,5]))
+
+// function chackText(numArray: number[], myText: string): any {
+//     switch (myText) {
+//         case "Upsite-Down":
+//             return numArray.reverse()
+//         case "ascending-order":
+//             return numArray.sort((a,b) => a-b)
+//         case "Descending-order":
+//             return numArray.sort((a,b) => b-a)
+//         case "text":
+//             return numArray.toString()    }
+// }
+// console.log(chackText([5,2,8,29,1],"text"))
+
+
