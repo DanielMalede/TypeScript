@@ -173,5 +173,5 @@
 //         case "text":
 //             return numArray.toString()    }
 // }
-// console.log(chackText([5,2,8,29,1],"text"))
+// console.log(chackText([5,2,8,29,1],"text  "))
 
