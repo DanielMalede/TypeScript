@@ -175,3 +175,205 @@
 // }
 // console.log(chackText([5,2,8,29,1],"text  "))
 
+/////////////////////////////////////////////////////////////////////////////////////
+// שאלות חדשות עם קלאס
+/////////////////////////////////////////////////////////////////////////////////////
+
+
+// function calc(num1?:number):number{
+//     return num1 ? num1 +5 :0
+// }
+// // console.log(calc(6)) //11
+// function getdetails(fname:string, age:number=18):string{
+//     return `${fname} ${age}`
+// }
+// // console.log(getdetails("jacob")) 
+
+// function sum(...numbers:number[]):number {
+//     let sumNum:number  = 0
+//     numbers.forEach(item => 
+//         sumNum+=item)
+//         return sumNum
+// }
+// console.log(sum(5,89,33,-127,25))
+
+// function printDetails(myNume:string , lastName?:string):string{
+//     return `${myNume},${lastName}`
+// }
+// console.log(printDetails("daniel"))
+
+// function printDetails (myNume:string,myAge:number,email?:string):any{
+//     return email==undefined? `${myNume}${myAge}`:`${myNume}${myAge}${email}`
+// }
+// console.log(printDetails("daniel",24))
+
+// function printDetails (catName:string,age:number,catType?:string):any{
+//   return  !catType? `${catName},${age}`: `${catName},${age},${catType}`
+// }
+// console.log(printDetails("Kity",5,"White"))
+
+// function printDetails(myText:string,mybol:boolean=true){
+//    return mybol? `Hello ${myText}`: `welcome ${myText}`
+// }
+// console.log(printDetails("daniel",true))
+
+// function printDetails(f_name:string,l_name:string,miss:string="miss"){
+//     return `${f_name},${l_name},${miss}`
+// }
+// console.log(printDetails("daniel","malede"))
+
+// function printDetails(myText:string,myOtherText?:string,defualt:number=1){
+//     for(let i =0;i<defualt;i++){
+//         console.log(`${myText},${myOtherText}`)
+//     }
+// }
+// printDetails("daniel","malede")
+
+// function orderLables(...myString:string[]){
+//     console.log(myString.sort().join())
+// }
+// orderLables('x','g','b')
+
+// function orderNumbers(...arrayNum:number[]):number[]{
+//      return arrayNum.sort() 
+// }
+// console.log(orderNumbers(1,5,8,1,4)) 
+
+// function orderNames(...arrayNames:string[]){
+//     return arrayNames.sort().join()
+// }
+// console.log(orderNames("daniel","abey","lior"))
+///////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////
+
+// class Car {
+//     company:string;
+//     modle:string;
+//     color:string;
+//     constructor(company:string,modle:string,color:string){
+//         this.company=company,
+//         this.modle=modle,
+//         this.color=color
+//     }
+// }
+
+// class Elephent {
+//     elephentHeigth:string=""
+//     elephentType:string=""
+//     elephentAge:number=0
+//     elephentCountry:string=""
+
+//     getelEphentInfo():string{
+//         return `${this.elephentHeigth}${this.elephentType}${this.elephentAge}${this.elephentCountry}`
+//     }
+// }
+// let newelphent = new Elephent()
+// newelphent.getelEphentInfo
+
+// class Pants {
+//     size:number;
+//     color:string;
+//     theType:string;
+//     fabric:string;
+//     long:string;
+//     doseInStock:boolean=true
+//     constructor(size:number,color:string,theType:string,fabric:string,long:string,doseInStock:boolean){
+//         this.size= size;
+//         this.color=color;
+//         this.theType=theType;
+//         this.fabric=fabric;
+//         this.long=long;
+//         this.doseInStock=doseInStock;
+//     }
+//     get getPantsInfo(){
+//         return `${this.size},${this.color},${this.theType},${this.fabric},${this.long},${this.doseInStock}`
+//     }
+// }
+// let newPants = new Pants (35,"blue","a","short","cotton",false)
+// console.log(newPants.getPantsInfo)
+
+// class Player {
+//     fullName: string;
+//     birthDate: string;
+//     ganer: string;
+//     sex?: string;
+//     constructor(fullName: string, birthDate: string, ganer: string, sex?: string) {
+//         this.fullName = fullName;
+//         this.birthDate = birthDate;
+//         this.ganer = ganer;
+//         this.sex= sex;
+//     }
+//     protected getPlayerInfo() {
+        
+//         return this.sex?`${this.fullName},${this.birthDate},${this.ganer},${this.sex}`:`${this.fullName},${this.birthDate},${this.ganer}`
+//     }
+//     get getPlayerResualt(){
+//         return this.getPlayerInfo()
+//     }
+// }
+// let newPlayer = new Player ("daniel","02-08-1997","basketBall","male")
+// console.log(newPlayer.getPlayerResualt)
+
+// class SoccerPlayer extends Player{
+//     team:string;
+//     dosePlayInTeam:boolean;
+//     constructor(fullName: string, birthDate: string, ganer: string,team:string,dosePlayInTeam:boolean, sex?: string){
+//     super(fullName, birthDate, ganer, sex)
+//     this.team= team
+//     this.dosePlayInTeam= dosePlayInTeam
+//     }
+//     get getSoccerPlayerInfo(){
+//         return `${this.getPlayerResualt},${this.team},${this.dosePlayInTeam}`
+//     }
+// }
+// let newSoccerPlayer = new SoccerPlayer ("gavriel","02-08-2000","football","A",true,"men")
+// console.log(newSoccerPlayer.getSoccerPlayerInfo)
+
+class User {
+    fullName:string;
+    age:number;
+    password:number;
+    private isOnline:boolean;
+    constructor(fullName:string,age:number,password:number,isOnline:boolean){
+        this.fullName = fullName
+        this.age=age
+        this.password =password
+        this.isOnline = isOnline
+    }
+    get useronline():boolean{
+        return this.getFromGet
+    }
+    set getFromGet(getFun:boolean){
+       this.isOnline= getFun
+    }
+    static getUserYoungesOrAdult(isYoung:boolean,...userOBJ: User[]){
+        isYoung? userOBJ.sort((a,b)=>a.age-b.age)[0]:userOBJ.sort((a,b)=>b.age-a.age)[0]
+    }
+}
+// const netanel = new User ("netanel",22,35981,true)
+// const daniel = new User ("daniel",25,35981,true)
+// User.getUserYoungesOrAdult(true,daniel,netanel)
+
+class Student extends User{
+    birthDay:string;
+    email:string;
+    constructor(fullName:string,age:number,password:number,isOnline:boolean,f_name:string,l_name:string,birthDay:string,email:string){
+        super(fullName,age,password,isOnline)
+        this.fullName=`${f_name} ${l_name}`;
+        this.email=email;
+        this.birthDay=birthDay;
+    }
+    get getStudent(){
+        return `${this.fullName}${this.birthDay}${this.email}${this.password}`
+    }
+    getUserStatus(){
+        this.useronline ?"green": "red"
+    }
+}
+const lior = new Student ("lior",26,3595557884581,false,"lior","david","1995-04-18","lior@gmail.com",)
+const abaynech = new Student ("abaynech",28,51548555,true,"abaynech","asaye","1995-12-29","abay@gmail.com")
+console.log( abaynech.useronline)
+
+
+
