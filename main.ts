@@ -376,4 +376,131 @@
 // console.log( abaynech.useronline)
 
 
+// class Room {
+//     width:number;
+//     length:number;
+//     squerSize:number;
+//     private isHaveAWindow:Boolean=false
+//     constructor(width:number,length:number){
+//         this.width=width
+//         this.length=length
+//         this.squerSize=width*length
+//     }
+//     printDetails():string{
+//         return `${this.width}${this.length}${this.squerSize}${this.isHaveAWindow}`
+//     }
+//     get getARoom(){
+//         return this.isHaveAWindow
+//     }
+//     set creatARoom(simLiOdroom:Boolean){
+//         this.isHaveAWindow= simLiOdroom
+//     }
+//     static roomStaticFun(isRoomSmall:Boolean,...rommOBG:Room[]){
+//         return rommOBG && isRoomSmall? rommOBG.sort((a,b)=> a.squerSize - b.squerSize)[0]: rommOBG.sort((a,b)=>b.squerSize - a.squerSize)[0]
+//     }
+// }
+// const left_room = new Room (25,30)
+// const right_room = new Room (50,60)
+// console.log(Room.roomStaticFun(false,left_room,right_room))
+
+// class Kitchen extends Room{
+//     numOfCloset:number;
+//     constructor(width:number,length:number,squerSize:number,numOfCloset:number){
+//         super(width,length)
+//         this.numOfCloset=numOfCloset
+//     }
+//     printKitchenInfo(){
+//         return `${this.width}${this.length}${this.numOfCloset}`
+//     }
+//     chackIfHasAWindows(){
+//         return super.getARoom? "have window" : "close room"
+//     }
+// }
+// const germanKitchen = new Kitchen (30,40,45,40)
+// const israelKitchen = new Kitchen (10,60,40,60)
+// console.log(Room.roomStaticFun(false,germanKitchen,israelKitchen))
+
+// class LivingRoom extends Room{
+//     num_Seats:number;
+//     air_Direction:string;
+//     constructor(width:number,length:number,num_Seats:number,air_Direction:string,squerSize:number){
+//         super(width,length)
+//         this.num_Seats=num_Seats
+//         this.air_Direction=air_Direction
+//     }
+//     printLivingRoomInfo(){
+//         return `${super.printDetails}${this.num_Seats}${this.air_Direction}`
+//     }
+//     chackIfHaveAirDirection(){
+//         return this.getARoom? `"have window" ${this.air_Direction}`: "close room"
+//     }
+// }
+// const firstLivingRoom = new LivingRoom (20,30,4,"North",5)
+// const secondLivingRoom = new LivingRoom (10,80,10,"West",6)
+// console.log(LivingRoom.roomStaticFun(false,firstLivingRoom,secondLivingRoom))
+
+// class Product {
+//     width:number;
+//     lenght:number;
+//     weight:number;
+//     price:number;
+//     private isOrderd:boolean=false
+//     constructor(width:number,lenght:number,weight:number,price:number){
+//         this.width=width
+//         this.lenght=lenght
+//         this.weight=weight
+//         this.price=price
+//     }
+//     getDetails():string{
+//         return `width:${this.width} lenght:${this.lenght} weight:${this.weight} price:${this.price}`
+//     }
+//     get getIsOrderd():boolean{
+//         return this.isOrderd
+//     }
+//     set setIsOrderd(bool:boolean){
+//         this.isOrderd=bool
+//     }
+//     static chackThePrice(priceExpensive:boolean=true,...productOBJ:Product[]){
+//         return priceExpensive? productOBJ.sort((a,b)=> b.price-a.price)[0] : productOBJ.sort((a,b)=> a.price-b.price)[0]
+//     }
+// }
+// const apple = new Product (3,8,4,1000)
+// const samsung = new Product (2,6,5,900)
+// // console.log(Product.chackThePrice(true,apple,samsung))
+
+// class Computer extends Product{
+//     powerSupply:number
+//     constructor(width:number,lenght:number,weight:number,price:number,powerSuplly:number){
+//         super(width,lenght,weight,price)
+//         this.powerSupply=powerSuplly
+//     }
+//     printComputerInfo():string{
+//         return `${this.getDetails()} Power Supply${this.powerSupply}`
+//     }
+//     chackIfNeededToOrder():string{
+//         return this.getIsOrderd? "Has been already Ordered" : "Needed To Order"
+//     }
+// }
+// const dell = new Computer (2,30,4,3000,250)
+// const lenovo = new Computer (1.9,28,2,2500,250)
+// // console.log(Computer.chackThePrice(false,dell,lenovo))
+
+// class ComputerScreen extends Product{
+//     numberOfOrder:number;
+//     screenResulotion:number;
+//     constructor(widht:number,lenght:number,weight:number,price:number,numOfOrder:number,screenResulotion:number){
+//         super(widht,lenght,weight,price)
+//         this.numberOfOrder=numOfOrder;
+//         this.screenResulotion=screenResulotion;  
+//     }
+//     printComputerScreenInfo():string{
+//         return   `${this.getDetails} number Of Orders${this.numberOfOrder} Screen Resulotion${this.screenResulotion}`
+//     }
+//     chackIfComputerScreenHasBeenOrder(){
+//         return this.getIsOrderd?`"Has Been Order,numbers of orders" ${this.numberOfOrder}` : "nedeed To Order"
+//     }
+// }
+// const hdScreen = new ComputerScreen (2,30,4,400,2,1080)
+// const fuulHdScreen = new ComputerScreen (4,40,4,500,2,2160)
+// // console.log(ComputerScreen.chackThePrice(true,hdScreen,fuulHdScreen))
 
