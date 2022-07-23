@@ -330,50 +330,50 @@
 // let newSoccerPlayer = new SoccerPlayer ("gavriel","02-08-2000","football","A",true,"men")
 // console.log(newSoccerPlayer.getSoccerPlayerInfo)
 
-class User {
-    fullName:string;
-    age:number;
-    password:number;
-    private isOnline:boolean;
-    constructor(fullName:string,age:number,password:number,isOnline:boolean){
-        this.fullName = fullName
-        this.age=age
-        this.password =password
-        this.isOnline = isOnline
-    }
-    get useronline():boolean{
-        return this.getFromGet
-    }
-    set getFromGet(getFun:boolean){
-       this.isOnline= getFun
-    }
-    static getUserYoungesOrAdult(isYoung:boolean,...userOBJ: User[]){
-        isYoung? userOBJ.sort((a,b)=>a.age-b.age)[0]:userOBJ.sort((a,b)=>b.age-a.age)[0]
-    }
-}
-// const netanel = new User ("netanel",22,35981,true)
-// const daniel = new User ("daniel",25,35981,true)
-// User.getUserYoungesOrAdult(true,daniel,netanel)
+// class User {
+//     fullName:string;
+//     age:number;
+//     password:number;
+//     private isOnline:boolean;
+//     constructor(fullName:string,age:number,password:number,isOnline:boolean){
+//         this.fullName = fullName
+//         this.age=age
+//         this.password =password
+//         this.isOnline = isOnline
+//     }
+//     get useronline():boolean{
+//         return this.getFromGet
+//     }
+//     set getFromGet(getFun:boolean){
+//        this.isOnline= getFun
+//     }
+//     static getUserYoungesOrAdult(isYoung:boolean,...userOBJ: User[]){
+//         isYoung? userOBJ.sort((a,b)=>a.age-b.age)[0]:userOBJ.sort((a,b)=>b.age-a.age)[0]
+//     }
+// }
+// // const netanel = new User ("netanel",22,35981,true)
+// // const daniel = new User ("daniel",25,35981,true)
+// // User.getUserYoungesOrAdult(true,daniel,netanel)
 
-class Student extends User{
-    birthDay:string;
-    email:string;
-    constructor(fullName:string,age:number,password:number,isOnline:boolean,f_name:string,l_name:string,birthDay:string,email:string){
-        super(fullName,age,password,isOnline)
-        this.fullName=`${f_name} ${l_name}`;
-        this.email=email;
-        this.birthDay=birthDay;
-    }
-    get getStudent(){
-        return `${this.fullName}${this.birthDay}${this.email}${this.password}`
-    }
-    getUserStatus(){
-        this.useronline ?"green": "red"
-    }
-}
-const lior = new Student ("lior",26,3595557884581,false,"lior","david","1995-04-18","lior@gmail.com",)
-const abaynech = new Student ("abaynech",28,51548555,true,"abaynech","asaye","1995-12-29","abay@gmail.com")
-console.log( abaynech.useronline)
+// class Student extends User{
+//     birthDay:string;
+//     email:string;
+//     constructor(fullName:string,age:number,password:number,isOnline:boolean,f_name:string,l_name:string,birthDay:string,email:string){
+//         super(fullName,age,password,isOnline)
+//         this.fullName=`${f_name} ${l_name}`;
+//         this.email=email;
+//         this.birthDay=birthDay;
+//     }
+//     get getStudent(){
+//         return `${this.fullName}${this.birthDay}${this.email}${this.password}`
+//     }
+//     getUserStatus(){
+//         this.useronline ?"green": "red"
+//     }
+// }
+// const lior = new Student ("lior",26,3595557884581,false,"lior","david","1995-04-18","lior@gmail.com",)
+// const abaynech = new Student ("abaynech",28,51548555,true,"abaynech","asaye","1995-12-29","abay@gmail.com")
+// console.log( abaynech.useronline)
 
 
 
