@@ -529,8 +529,8 @@
 //         return numGoseUp ? factoryOBJ.sort((a, b) => b.numOfWorkers - a.numOfWorkers)[0] : factoryOBJ.sort((a, b) => a.numOfWorkers - b.numOfWorkers)[0]
 //     }
 // }
-// const f_factory = new Factory("starkist", "tel-aviv", 4000, true)
-// const s_factory = new Factory("hamburger", "Rishon-lezion", 10000, false)
+// const f_factory:Factory = new Factory("starkist", "tel-aviv", 4000, true)
+// const s_factory:Factory = new Factory("hamburger", "Rishon-lezion", 10000, false)
 // // console.log(Factory.returnTheBiggestFactory(true,f_factory,s_factory))
 
 // class Tv extends Factory {
@@ -546,8 +546,8 @@
 //         return this.approved ? "its has been approved" : "approved has been sended"
 //     }
 // }
-// const samsung = new Tv("smasung", "Tel-aviv", 2500, true, 100)
-// const xiaomi = new Tv("xiaomi", "Tel-aviv", 4000, true, 250)
+// const samsung:Tv = new Tv("smasung", "Tel-aviv", 2500, true, 100)
+// const xiaomi:Tv = new Tv("xiaomi", "Tel-aviv", 4000, true, 250)
 // // console.log(Tv.returnTheBiggestFactory(false,samsung,xiaomi))
 
 // class Sandwich extends Factory {
@@ -563,6 +563,6 @@
 //         return `${this.getIsAutomation}` ? "there is automation" : "there is no automation"
 //     }
 // }
-// const newdeli = new Sandwich("newdeli","jerusalem",4,true,true)
-// const bbb = new Sandwich("bbb","tel-aviv",10,true,true)
+// const newdeli:Sandwich = new Sandwich("newdeli","jerusalem",4,true,true)
+// const bbb:Sandwich = new Sandwich("bbb","tel-aviv",10,true,true)
 // console.log(Tv.returnTheBiggestFactory(false,newdeli,bbb))
