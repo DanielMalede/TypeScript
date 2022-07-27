@@ -566,3 +566,33 @@
 // const newdeli:Sandwich = new Sandwich("newdeli","jerusalem",4,true,true)
 // const bbb:Sandwich = new Sandwich("bbb","tel-aviv",10,true,true)
 // console.log(Tv.returnTheBiggestFactory(false,newdeli,bbb))
+
+
+
+function dubeleNumbers(num1:number,num2:number):number{
+    return num1*num2       
+}
+console.log(dubeleNumbers(2,3));
+
+function plusNumbers(num1:number,num2:number):number{
+    return num1+num2
+}
+function minNumbers(num1:number,num2:number):number{
+    return num1-num2
+}
+function dividedNumbers(num1:number,num2:number):number{
+    return num1/num2
+}
+
+
+function getUserName(Name:string){
+switch (Name) {
+    case "yuram":
+         console.log(Name);
+        
+
+        break;
+    case "shlomo":
+        console.log(Name);
+}
+}
