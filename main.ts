@@ -567,8 +567,6 @@
 // const bbb:Sandwich = new Sandwich("bbb","tel-aviv",10,true,true)
 // console.log(Tv.returnTheBiggestFactory(false,newdeli,bbb))
 
-
-
 // function dubeleNumbers(num1:number,num2:number):number{
 //     return num1*num2       
 // }
